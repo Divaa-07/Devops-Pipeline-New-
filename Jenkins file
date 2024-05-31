@@ -1,15 +1,7 @@
 pipeline {
     agent any
 
-    stages {
-        stage('Checkout') {
-            steps {
-                script {
-                    echo 'Checking out code...'
-                    git branch: 'main', url: 'https://github.com/Divaa-07/Devops-Pipeline-New-.git'
-                }
-            }
-        }
+  
         stage('Build') {
             steps {
                 script {
